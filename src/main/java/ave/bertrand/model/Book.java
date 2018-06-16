@@ -6,13 +6,14 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-@Document(indexName = "mkyong", type = "books")
+@Document(indexName = "my_first_embedded_elastic_search_index", type = "books")
 public class Book {
 
 	@Id
 	private String id;
 	private String title;
 	private String author;
+
 	private Date releaseDate;
 
 	public Book() {

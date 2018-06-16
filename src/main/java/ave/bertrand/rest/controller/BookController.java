@@ -50,6 +50,7 @@ public class BookController {
 
 		Book book = new Book("1101", "Elasticsearch Basics 2", "Rambabu rosa", new Date());
 		Book savedBook = bookService.save(book);
+		log.info("This book has been created: {}.", savedBook);
 
 		return ResponseEntity.ok().body(savedBook);
 	}
