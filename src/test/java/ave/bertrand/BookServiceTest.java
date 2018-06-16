@@ -11,7 +11,6 @@ import java.util.Date;
 import java.util.List;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +42,6 @@ public class BookServiceTest {
 	}
 
 	@Test
-	@Ignore
 	public void testSave() {
 
 		Book book = new Book("1001", "Elasticsearch Basics", "Rambabu Posa", new Date());
@@ -74,7 +72,6 @@ public class BookServiceTest {
 	}
 
 	@Test
-	@Ignore
 	public void testFindByTitle() {
 
 		Book book = new Book("1001", "Elasticsearch Basics", "Rambabu Posa", new Date());
@@ -85,7 +82,6 @@ public class BookServiceTest {
 	}
 
 	@Test
-	@Ignore
 	public void testFindByAuthor() {
 
 		List<Book> bookList = new ArrayList<>();
@@ -109,7 +105,6 @@ public class BookServiceTest {
 	}
 
 	@Test
-	@Ignore
 	public void testDelete() {
 
 		Book book = new Book("1001", "Elasticsearch Basics", "Rambabu Posa", new Date());
