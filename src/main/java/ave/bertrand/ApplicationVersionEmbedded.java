@@ -15,12 +15,12 @@ public class ApplicationVersionEmbedded {
 		SpringApplication app = new SpringApplication(ApplicationVersionEmbedded.class);
 		Environment env = app.run(args).getEnvironment();
 
-		String host = env.getProperty("server.address");
+		/*String host = env.getProperty("server.address");
 		String contextPath = env.getProperty("server.contextPath");
 		String serverPort = env.getProperty("server.port");
 
 		log.info("\n\nAccess URLs:\n----------------------------------------\n\tLocal: \t\thttp://{}:{}{}\n\n", host,
-				serverPort, contextPath);
+				serverPort, contextPath);*/
 		log.info("http://localhost:8080/swagger-ui.html");
 	}
 }
